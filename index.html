@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura</title>
+    <style>
+       
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+
+        *{
+            margin: 1;
+            padding: 1;
+            box-sizing: border-box;
+            font-weight: bold;
+           
+        }
+        body{
+            background-color:beige;
+            font-family: "Montserrat Subrayada", sans-serif;
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            color: gray;
+        }
+        ul li a{
+            margin: 0 5px;
+            border: 2px solid gray;
+            padding: 1 10px;
+            text-decoration: none;
+            border-radius: 50px;
+            color: gray;
+        }
+        .logo{
+        
+            padding: 10px 10px;
+            padding-left: 0;
+        }
+        .signup{
+            background-color:  #D3D3D3;
+            color:gray;
+        }
+        .signup:hover{
+            background-color: beige;
+            color: gray;
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            justify-content:space-evenly ;
+            align-items: center;
+            margin: 0 150px;
+            flex-wrap: wrap;
+        }
+        main h2{
+            font-size: 30px;
+            font-weight: 200;
+            line-height: 31.5px;
+            margin: 30px 0px;
+            color: grey;
+           
+        }
+        main p{
+            font-size: 17px;
+            text-transform:inherit;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:grey
+        }
+        .contentleft{
+           flex:1;
+        }
+        .contentmid{
+           flex:2;
+        }
+        .contentright{
+           flex:1;
+        }
+        .sweat{
+            max-width: 500px;
+            height: auto;
+        }
+        .btn{
+            padding: 15px 30px;
+            background-color: #D3D3D3;
+            color:gray;
+            outline: none;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-weight: 800;
+
+        }
+        .btn:hover{
+            background-color: beige;
+            color: gray;
+            border: 2px solid gray;
+            list-style-type:none
+        }
+        .img{
+            border-radius: 40px;
+            image-orientation: inherit;
+            
+        }
+        
+
+
+        /* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+    header {
+        padding: 0 20px;
+    }
+    ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+        color: gray;
+        
+    }
+    main {
+        margin: 0 20px;
+        padding: 0;
+    }
+    .contentleft, .contentmid, .contentright {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    ul li {
+        margin: 15px;
+    }
+    .contentleft, .contentmid, .contentright {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+    main h2 {
+        font-size: 24px;
+    }
+    main p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .btn {
+        width: auto;
+        font-size: 14px;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .logo img {
+        height: 60px;
+        width: 60px;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    ul li a {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    main h2 {
+        font-size: 20px;
+    }
+    main p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aura.jpeg" height="100" width="100" class="img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Buy Now</a></li>
+                <li><a href="">Sell Now</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="" class="signup">Sign Up</a></li>
+
+            </ul>
+        </nav>
+    </header>  
+    
+    <main>
+        <div class="contentleft">
+            <h2>Sweatshirt</h2></div>
+            
+        <div class="contentmid">
+            <p>One casual clothing item that is appropriate all year round is none other than sweatshirts. Sweatshirts for ladies keep them cosy, fashionable, and comfortable all at the same time.
+<br>
+                Aura's range of sweatshirts for women from popular brands will keep you on top of your fashion game. Make looking laid-back cool by filtering through sweatshirts for ladies on Myntra.</p>
+                <button class="btn" >  <a href="abc.html">Buy Now</a></button>
+              
+        </div>
+        
+        <div class="contentright">
+            <img src="sweat.jpeg" class="shirt">
+        </div>
+
+
+    </main>
+</body>
+</html>-
